@@ -7,15 +7,15 @@ import TransnctionList from './components/TransactionList';
 import AddTransaction from './components/AddTransaction';
 import { v4 as uuidv4 } from 'uuid';
 
-// const list = [
-//   { id: 1, text: 'Flower', amount: -19.99 },
-// 		{ id: 2, text: 'Salary', amount: 299.97 },
-// 		{ id: 3, text: 'Book', amount: -10 },
-// 		{ id: 4, text: 'Camera', amount: 150 },
-// ];
+const list = [
+  { id: 1, text: 'Flower', amount: -19.99 },
+  { id: 2, text: 'Salary', amount: 299.97 },
+  { id: 3, text: 'Book', amount: -10 },
+  { id: 4, text: 'Camera', amount: 150 },
+];
 
 function App() {
-  const [transactions, setTransactions] = useState([]);
+  const [transactions, setTransactions] = useState(list);
   const [income, setIncome] = useState(0);
   const [expense, setExpense] = useState(0);
   const [balance, setBalance] = useState(0);
